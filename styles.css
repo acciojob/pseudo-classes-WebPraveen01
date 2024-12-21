@@ -1,1 +1,37 @@
-/*  your css code here. If applicable */
+:root {
+  --bg-color: rgb(135, 206, 235); /* Define the background color as a CSS variable */
+}
+body{
+	background-color:var(--bg-color);
+}
+
+article p:first-child {
+  color: white; /* Set text color to white */
+  background-color: black; /* Set background color to black */
+}
+
+article p:nth-child(2) {
+  color: inherit; /* Use the default text color */
+}
+
+article p:last-child {
+  color: red; /* Set text color to red */
+}
+
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+}
+
+ul li {
+  width: 50%; /* Set width to 50% for each list item */
+  padding: 10px; /* Add padding inside each list item */
+  background-color: gray; /* Set background color to gray for all items */
+}
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
+ul li:nth-last-child(3) {
+  background-color: pink;
+}
